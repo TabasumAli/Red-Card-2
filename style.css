@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* ============================================================== */
+/* Navbar css */
+
+#logo{
+    width: 8%;
+}
+
+
+/* Main Card css */
+main{
+    background-color: brown;
+    background: linear-gradient(-36deg, white  7%,  brown 0%);
+    padding: 130px 20px;
+    margin-top: 1rem;
+}
+
+
+h1{
+    font-size: 50px;
+    color: rgb(241, 234, 234);
+    margin-bottom: 4px;
+    font-weight: 800;
+}
+/* ============================================================== */
+/* Utility classes */
+
+.flex{
+    display: flex;
+    /* row-gap: 3px; */
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 7px; */
+
+}
+
+.container2-1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++= */
+
+/* left container of grid */
+
+.left-container{
+    padding: 13rem 6rem 0;
+}
+
+
+#lc-ibx-1{ 
+    margin-left: 400px;
+}
+
+#lc-ibx-2{
+    margin-left: 370px;
+}
+
+
+h1+p{
+    color: black;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.deadline-text{
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+    padding-right: 100px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++= */
+
+/* Right container of grid */
+.right-container{
+    flex-direction: column;
+    /* text-align: left; */
+    padding: 0 5rem;
+}
+
+
+#desc-text{
+    color: rgb(241, 234, 234);
+    font-size: 12px;
+    margin: 15px 0;
+    /* margin-bottom: 4px; */
+}
+
+.rc-checkboxes{
+    /* margin: 3px 0; */
+    margin-bottom: 10px;
+    justify-content: right;
+    
+}
+
+
+.right-container h2{
+    color: black;
+    font-weight: 800;
+}
+
+
+
+button{
+    width: 80%;
+    padding: 10px 8px;
+    font-size: 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgb(37, 33, 33);
+
+}
+textarea{
+    resize: none;
+    width: 95%;
+    height: 10%;
+    background: brown;
+    border: 2px solid whitesmoke;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    color: rgb(241, 234, 234);
+    padding-left: 3px;
+    font-size: 15px;
+}
+
+textarea:focus{
+    outline: none;
+
+}
+
+input[type= "text"],input[type= "email"]{
+    width: 95%;
+    padding: 15px 0;
+    background: brown;
+    border: 2px solid whitesmoke;
+    margin-bottom: 18px;
+    color: rgb(241, 234, 234);
+    padding-left: 6px;
+    font-size: 15px;
+}
+
+input[type= "text"]:focus,input[type= "email"]:focus{
+    outline: none;
+}
+
+input[type= "text"]:active,input[type= "email"]:active{
+    outline: none;  
+}
+ 
+
+::placeholder{
+    color: rgb(241, 234, 234);
+    padding: 3px 6px;    
+}
+
+label{
+    color: white;
+}
+
+.c-left-one{
+    appearance: none;
+    /* -webkit-appearance: none; */
+    height: 15px;
+    width: 15px;    
+    border: 1px solid rgb(207, 192, 192);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.c-left-one:checked:after{
+    display: block;
+}
+.c-left-one:after{
+    content: '✔';
+    font-size: 18px;
+    color:white;
+    display: none;
+}
+
+
+/* Font Awesome icom */
+
+.fa-custom{
+    font-size: 25px;
+    margin-right: 6px;
+    color: rgb(37, 33, 33);
+}
